@@ -7,7 +7,7 @@ export function getImgSrc(imgSrc: string | undefined): string {
     return '';
   }
   if (!validURL(imgSrc)) {
-    return require(`../assets/${imgSrc}`);
+    return require(`../assets/${imgSrc}`).default;
   }
   return imgSrc;
 }

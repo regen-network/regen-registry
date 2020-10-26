@@ -105,24 +105,29 @@
       "media": [
         {
           "src": "Wilmot5.jpg",
-          "thumbnail": "Wilmot5-thumbnail.jpg"
+          "thumbnail": "Wilmot5-thumbnail.jpg",
+          "type": "image"
         },
         {
           "src": "Wilmot3.jpg",
-          "thumbnail": "Wilmot3-thumbnail.jpg"
+          "thumbnail": "Wilmot3-thumbnail.jpg",
+          "type": "image"
         },
         {
           "src": "Wilmot4.jpg",
-          "thumbnail": "Wilmot4-thumbnail.jpg"
+          "thumbnail": "Wilmot4-thumbnail.jpg",
+          "type": "image"
         },
         {
           "src": "Wilmot6.jpg",
-          "thumbnail": "Wilmot6-thumbnail.jpg"
+          "thumbnail": "Wilmot6-thumbnail.jpg",
+          "type": "image"
         },
         {
           "src": "https://regen-registry.s3.amazonaws.com/Wilmot+Video.mp4",
           "thumbnail": "Wilmot2-thumbnail.jpg",
-          "preview": "Wilmot2.jpg"
+          "preview": "Wilmot2.jpg",
+          "type": "video"
         }
       ],
       "image": "wilmotcattlecompany.jpg",

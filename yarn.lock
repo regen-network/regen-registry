@@ -10778,7 +10778,7 @@ redent@^3.0.0:
 
 "regen-components@git+ssh://git@github.com:regen-network/regen-components.git":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:regen-network/regen-components.git#7ee8faec3e78bfba4f07dbf0e4cb433aaa4bdab6"
+  resolved "git+ssh://git@github.com:regen-network/regen-components.git#8d56472485c2364207328119043d28162adee46f"
   dependencies:
     "@mapbox/mapbox-sdk" "^0.10.0"
     "@mapbox/togeojson" "^0.16.0"

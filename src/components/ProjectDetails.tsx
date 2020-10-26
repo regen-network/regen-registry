@@ -325,6 +325,7 @@ export default function ProjectDetails({ project, projectDefault }: ProjectProps
     src: getImgSrc(item.src),
     thumbnail: getImgSrc(item.thumbnail),
     preview: getImgSrc(item.preview),
+    type: item.type,
   }));
 
   const projectDeveloper: User = getProjectUser(project.developer);
@@ -337,7 +338,7 @@ export default function ProjectDetails({ project, projectDefault }: ProjectProps
   const [geojson, setGeojson] = useState<any | null>(null);
 
   // Convert kml to geojson
-  const mapFile: string = require(`../assets/${project.map}`);
+  const mapFile: string = require(`../assets/${project.map}`).default;
   const isGISFile: boolean = /\.(json|kml)$/i.test(project.map);
 
   if (!geojson && isGISFile) {
@@ -378,11 +379,6 @@ export default function ProjectDetails({ project, projectDefault }: ProjectProps
       <div className={`${classes.projectTop} project-top`}>
         <Grid container className={`${classes.projectContent} ${classes.projectTopContent}`}>
           <Grid item xs={12} sm={7} className={classes.projectMedia}>
-            {/*<img
-              className={classes.projectTopImage}
-              alt={project.name}
-              src={require(`../assets/${project.photos[0]}`)}
-            />*/}
             <ProjectMedia assets={assets} />
           </Grid>
           <Grid item xs={12} sm={5} className={classes.projectTopText}>
@@ -398,7 +394,7 @@ export default function ProjectDetails({ project, projectDefault }: ProjectProps
             )}
             {project.glanceImgSrc && project.glanceText && (
               <div className={classes.glanceCard}>
-                <GlanceCard imgSrc={require(`../assets/${project.glanceImgSrc}`)} text={project.glanceText} />
+                <GlanceCard imgSrc={require(`../assets/${project.glanceImgSrc}`).default} text={project.glanceText} />
               </div>
             )}
           </Grid>
