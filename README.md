@@ -1,4 +1,6 @@
-# Regen Registry
+# Future repo for Regen Registry
+
+Please do not use this code at the moment but go to https://github.com/regen-network/regen-web instead. This is the repository we'll be using when we have migrated `regen-web/web-registry` as a separate repo.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
