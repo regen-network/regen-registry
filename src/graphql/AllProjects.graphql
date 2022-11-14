@@ -1,8 +1,0 @@
-{
-  allProjects {
-    nodes{
-      id
-      name
-    }
-  }
-}
