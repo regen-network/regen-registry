@@ -1,3 +1,5 @@
-# Regen Registry
+# rnd-dev-team
 
-Repo mainly used for issue management for now.
+RND Dev Team issue management repository.
+
+*Note: This repository is now deprecated. Please open issues in their respective repositories.*
